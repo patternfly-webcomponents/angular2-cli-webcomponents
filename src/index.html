@@ -2,11 +2,32 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Angular2CliWebpack</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Angular2Cli Webcomponents Demo</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
   <base href="/">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- patternfly css -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/patternfly/3.18.1/css/patternfly.min.css"/>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/patternfly/3.18.1/css/patternfly-additions.min.css"/>
+
+  <!-- load the webcomponent polyfill-->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.23/webcomponents-lite.js"/>
+
+  <!-- Custom Element shim for Safari -->
+  <script>
+    if (typeof HTMLElement !== 'function'){
+      var _HTMLElement = function(){};
+      _HTMLElement.prototype = HTMLElement.prototype;
+      HTMLElement = _HTMLElement;
+    }
+  </script>
+
+  <!-- vendor scripts from cdn -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/patternfly/3.18.1/js/patternfly.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
 </head>
 <body>
   <app-root>Loading...</app-root>

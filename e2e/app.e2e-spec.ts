@@ -1,6 +1,6 @@
 import { Angular2CliWebpackPage } from './app.po';
 
-describe('angular2-cli-webpack App', function() {
+describe('angular2-cli-webcomponents App', function() {
   let page: Angular2CliWebpackPage;
 
   beforeEach(() => {
